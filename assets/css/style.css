@@ -1,0 +1,54 @@
+button,
+div,
+form,
+input {
+    margin: 6px;
+}
+
+body{
+	
+}
+
+h1 {
+    text-align: center;
+}
+
+.inputForm {
+    border: 2px solid darkblue;
+}
+
+.gifsDisplay {
+    border: 2px solid darkblue;
+    margin-right: 10px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	height:1165px;
+}
+
+#label-gif {
+    font-size: 20px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border:2px solid #777;
+}
+
+.item {
+    width: 270px;
+    height: 270px;
+    float: left;
+    margin-left: 36px;
+    margin-right: 0px;
+}
+
+p {
+    margin-top: -2px;
+    margin-bottom: 0px;
+    font-weight:  bold;
+}
+
