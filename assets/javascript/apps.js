@@ -12,24 +12,33 @@
          url: queryURL,
          method: 'GET'
      }).done(function(response) {
-         console.log(response);
-         $("img").remove();
+         console.log(response); //test display
+         $("img").remove(); //remove the classes to resest the container
          $("p").remove();
          var results = response.data;
 
-
          for (var i = 0; i < results.length; i++) {
-             var gifDiv = $('<div class="item">')
-             var rating = results[i].rating;
-             var p = $('<p>').text("Rating: " + rating);
-             var gifImage = $('<img>');
-             var still = gifImage.attr('src', results[i].images.original.url);
-             gifImage.attr("class", "still");
-             gifDiv.append(p);
-             gifDiv.append(gifImage);
-             $('#gifsView').prepend(gifDiv);
 
+             var p = $('<div class="item">').append($('<p>').text("Rating: " + results[i].rating));
+             var still_image = $('<div class="item">').append('<img src=' + results[i].images.fixed_height_still.url + ' class="still" id="' + i + '">');
+             $('#gifsView').prepend(p);
+             $('#gifsView').prepend(still_image);
          }
+             //animate gif on click
+             $(document).on("click", ".still", function() {
+                 x = $("img").attr("class");
+                 y = $(this).attr("id");
+                 $(this).attr("src", response.data[y].images.fixed_height.url);
+                 $(this).attr("class", "move");
+             });
+             //still gif on click
+             $(document).on("click", ".move", function() {
+                 x = $("img").attr("class");
+                 y = $(this).attr("id");
+                 $(this).attr("src", response.data[y].images.fixed_height_still.url);
+                 $(this).attr("class", "still");
+             });
+         
 
 
      });
