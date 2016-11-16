@@ -1,3 +1,4 @@
+/*styles for the html tags*/
 button,
 div,
 form,
@@ -6,16 +7,34 @@ input {
 }
 
 body {
-    background-color: lightgray;
+    background-color: lightblue;
 }
 
 h1 {
     text-align: center;
-    background-color: dimgray;
+    background-color: darkblue;
     padding: 40px;
     margin-top: -5px;
+    color: white;
+    font-size: 53px;
+    font-family: cursive;
 }
 
+img {
+    width: 250px;
+    height: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 2px solid #777;
+}
+
+p {
+    margin-top: -2px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+/*-------------------styles for Defined classes--------------------------------*/
 .inputForm {
     border: 2px solid gray;
 }
@@ -33,13 +52,6 @@ h1 {
     font-size: 20px;
 }
 
-img {
-    width: 250px;
-    height: 250px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border: 2px solid #777;
-}
 
 .item {
     width: 270px;
@@ -49,8 +61,4 @@ img {
     margin-right: 0px;
 }
 
-p {
-    margin-top: -2px;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
+
