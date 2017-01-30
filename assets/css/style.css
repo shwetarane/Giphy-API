@@ -21,8 +21,8 @@ h1 {
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     margin-left: 0px;
     margin-right: 0px;
     border: 2px solid #777;
@@ -54,7 +54,7 @@ p {
 
 
 .item {
-    width: 270px;
+    width: 232px;
     height: 270px;
     float: left;
     margin-left: 36px;
