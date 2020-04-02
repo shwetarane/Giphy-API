@@ -16,8 +16,6 @@
          var results = response.data;
 
          for (var i = 0; i < results.length; i++) {
-
-
              var still_image = $('<div class="item">').append('<img src=' + results[i].images.fixed_height_still.url + ' class="still" id="' + i + '">');
              var p = still_image.append($('<p>').text("Rating: " + results[i].rating));
              var a = $('#gifsView').prepend(still_image);
@@ -37,11 +35,7 @@
              $(this).attr("src", response.data[y].images.fixed_height_still.url);
              $(this).attr("class", "still");
          });
-
-
-
      });
-
  }
 
  // Generic function for displaying gif data
