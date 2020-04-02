@@ -1,4 +1,4 @@
- var gifs = ["Wfh", "Friday", "Tgif", "Thrones", "Dog", "mondays", "Austin"];
+ var gifs = ["Wfh", "Tgif", "Dog", "Quarantine", "Austin"];
 
  // displayGifInfo function now re-renders the HTML to display the appropriate content.
  function displayGifsInfo() {

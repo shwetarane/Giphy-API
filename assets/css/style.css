@@ -1,31 +1,20 @@
+body{
+    background-color: beige;
+}
 /*styles for the html tags*/
 button,
 div,
 form,
 input {
-    margin: 6px;
-}
-
-body {
-    background-color: lightblue;
-}
-
-h1 {
-    text-align: center;
-    background-color: darkblue;
-    padding: 40px;
-    margin-top: -5px;
-    color: white;
-    font-size: 53px;
-    font-family: cursive;
+    margin: 0.5em;
 }
 
 img {
-    width: 220px;
-    height: 220px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border: 2px solid #777;
+    width: 12rem;
+    height: 12rem;
+    margin: 0.5em;
+    box-shadow: 0.3em 0.3em 2px grey;
+    border-radius: 0.6em;
 }
 
 p {
@@ -34,24 +23,21 @@ p {
     font-weight: bold;
 }
 
-/*-------------------styles for Defined classes--------------------------------*/
-.inputForm {
-    border: 2px solid gray;
+.btn{
+    box-shadow: 3px 3px 2px grey;
 }
 
+/*-------------------styles for Defined classes--------------------------------*/
+
+
 .gifsDisplay {
-    /*border: 2px solid gray;*/
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 1em;
     height: 1165px;
 }
 
 #label-gif {
     font-size: 20px;
 }
-
 
 .item {
     width: 232px;
