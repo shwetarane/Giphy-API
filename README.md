@@ -6,4 +6,3 @@ When the button is clicked it returns 10 gifs related to the button. The gif mov
 Technologies used: Jquery/Javascript, AJAX, HTML, CSS
 API used : giphy open source API(https://github.com/Giphy/GiphyAPI) 
 
-Demo: http://arcane-temple-47778.herokuapp.com/
